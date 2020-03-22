@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="desctiption" content="My first Website">
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+<title>My website</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+     <div class="container-fluid">
+     <div class="navbar-header">
+        <a class="navbar-brand" href="#">Nadav's Page</a>
+    </div>
+     <ul class="nav navbar-nav">
+      <li class="active"><a href="#about">About Me</a></li>
+      <li><a href="#photos">My photos</a></li>
+      <li><a href="#playlist">My playlist</a></li>
+      <li><a href="#like">Like</a></li>
+      <li><a href="#qrcoder">QR</a></li>
+      <li><a href="#spa">Q&A</a></li>
+      <li><a href="#contact">Contact me</a></li>
+    </ul>
+     </div>
+    </nav>
+		  
+<section id="about" class="section">
+ <h3 class="bluetitle">About me</h3>
+ <p>Hello, my name is Nadav Chapnick and i am 24 years old. I am third grade student of Software and Information System engineering at Ben Gurion University I`am highly motivated for learning and develop myself as a programmer. </p>
+ <br/>
+ <br/>
+</section>
+
+<section id="photos" class="section">
+ <h3>My photos</h3>
+ <p>
+ <img width="300" height="300" src="./assets/nadav1.jpeg"/>
+ <img width="300" height="300" src="./assets/stadium.jpg"/>
+ <img width="300" height="300" src="./assets/hamburger.jpg"/>
+ <img width="300" height="300" src="./assets/barcelona.jpg"/>
+ </p>
+ <br/>
+ <br/>
+</section>
+
+<section id="playlist" class="section">
+ <h3>My playlist</h3>
+ <p>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/CziHrYYSyPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <br/>
+ </p>
+</section>
+
+<section id="like" class="section">
+ <h3>Give me a like</h3>
+ <p><iframe src="http://www.facebook.com/plugins/like.php?href=https://sise-web-development-environments.github.io/314979774/&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80&amp" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe></p>
+ <br/>
+</section>
+
+<section id="qrcoder" class="section">
+ <h3>Scan my code</h3>
+  <p><img src="./assets/qr.png"/></p>
+ <br/>
+ <br/>
+</section>
+
+<section id="spa" class="section">
+ <h3>Ans</h3>
+  <p><strong><u>The Three main diffrences between web1,web2 and web3</u></strong> 
+ <br/>
+  Web 1.0 is simply an information portal where users passively receive information without being given the opportunity to post reviews, comments, and feedback.
+ <br/>
+  Web 2.0 encourages participation, collaboration, and information sharing. Examples of Web 2.0 applications are Youtube, Wiki, Flickr, Facebook, and so on.
+ <br/>
+  Web 3.0 is a semantic web which refers to the future. In Web 3.0, computers can interpret information like humans and intelligently generate and distribute useful content tailored to the needs of users. One example of Web 3.0 is Tivo, a digital video recorder. Its recording program can search the web and read what it finds to you based on your preferences.
+ <br/>
+ <br/>
+  <strong><u>Medicines side effects Use Case</u></strong>
+ <br/>
+ <br/>
+ </p>
+</section>
+
+<section id="contact" class="section">
+ <h3>Contact me</h3>
+  <form action="mailto:chapnick@post.bgu.ac.il" method="post">
+  <p>
+   <label for="email"><strong>email</strong></label>
+   <input type="email" id="email" name="email" value="enter your mail here">
+ <br/>
+ <br/>
+   <label for="subject"><strong>subject</strong></label>
+   <input name="subject:" type="text" size="25" value="enter your subject here">
+ <br/>
+ <p class="container">
+    <label for="message">Message:</label>
+    <br/>
+    <textarea id="Text" name="Text" rows="4" cols="35" data-emojiable="true"></textarea>
+</p>
+<br/>
+ <p>
+   <input type="submit" value="send"/> 
+   <input type="reset" value="reset"/>
+</p>
+ <br/>
+  </p>
+ </form>
+</section>
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });​
+ </script>
+ <script src="js/emojipicker.js"></script>
+ <script>
+   (() => {
+     new EmojiPicker()
+   })()
+ </script>
+</body>
+</html>

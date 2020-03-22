@@ -1,0 +1,14 @@
+
+h3{
+    
+    text-align: center;
+
+}
+p{
+    text-align: center;
+}
+p.container{
+    padding-top: 20px;
+	width: 300px;
+	margin: 0 auto;
+}
