@@ -12,3 +12,12 @@ p.container{
 	width: 300px;
 	margin: 0 auto;
 }
+.sticky {
+    position: fixed;
+    top:28px;
+    width: 100%;
+  }
+
+.sticky + .content {
+    padding-top: 60px;
+  }
