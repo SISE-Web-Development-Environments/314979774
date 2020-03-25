@@ -13,10 +13,10 @@
 <title>My website</title>
 </head>
 <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
      <div class="container-fluid" id="myHeader">
      <div class="navbar-header">
-        <a class="navbar-brand" href="#"> <img width="35" height="35" src="./assets/logo.jpeg"/></a>
+        <a class="navbar-brand" href="#"> <img  width="35" height="35" src="./assets/logo.jpeg"/></a>
     </div>
      <ul class="nav navbar-nav">
       <li class="active"><a href="#about">About Me</a></li>
@@ -29,7 +29,8 @@
     </ul>
      </div>
     </nav>
-		  
+</br>
+</br>
 <section id="about" class="section">
  <h3 class="bluetitle">About me</h3>
  <p>Hello, my name is Nadav Chapnick and i am 24 years old. I am third grade student of Software and Information System engineering at Ben Gurion University I`am highly motivated for learning and develop myself as a programmer. </p>
@@ -140,21 +141,5 @@ $(function(){
      new EmojiPicker()
    })()
  </script>
-  <script>window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}</script>
 </body>
 </html>
